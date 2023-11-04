@@ -1,0 +1,7 @@
+version: '3'
+
+tasks:
+  prepare:
+    desc: 手动导出后，依次格式化、清洗并设置首页和属性显示
+    cmds:
+      - uv run scripts/prepare.py --write{{range .CLI_ARGS_LIST}} {{shellQuote .}}{{end}}

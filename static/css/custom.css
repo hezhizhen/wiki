@@ -1,0 +1,17 @@
+/* 正文:14px,行距适配 */
+.block-content,
+.block-content .inline,
+textarea[id^="edit-block-"] {
+  font-family: "DroidSansM Nerd Font", "LXGW WenKai", sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+}
+
+/* 代码块/行内代码:12px,行距适配 */
+.block-content code,
+.block-content pre,
+.block-content .CodeMirror {
+  font-family: "JetBrainsMono Nerd Font", "LXGW WenKai", ui-monospace, monospace !important;
+  font-size: 12px !important;
+  line-height: 1.2 !important;
+}

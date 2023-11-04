@@ -1,0 +1,6 @@
+@import url("https://cdn.jsdelivr.net/gh/henices/logseq-flow-nord@main/nord.css");
+
+#main-content-container > .cp__sidebar-main-content {
+  min-width: 0;
+  max-width: 100%;
+}
