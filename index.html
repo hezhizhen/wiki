@@ -925,7 +925,7 @@
            ["~#datascript/Datom", [68891, "~:block/original-name", "My Recommendation", 536903022]],
            ["~#datascript/Datom", [68891, "~:block/properties", ["^ ", "~:public", true], 536989544]],
            ["~#datascript/Datom", [68891, "~:block/properties-text-values", ["^ ", "~:public", "true"], 536989544]],
-           ["~#datascript/Datom", [68891, "~:block/updated-at", 1794153921691, 537001877]],
+           ["~#datascript/Datom", [68891, "~:block/updated-at", 1794498171963, 537002634]],
            ["~#datascript/Datom", [68891, "~:block/uuid", "~u67168018-6913-4a78-bbde-23d07497618a", 536903026]],
            ["~#datascript/Datom", [68892, "~:block/content", "作为 tag 收集我的推荐", 536903064]],
            ["~#datascript/Datom", [68892, "~:block/format", "~:markdown", 536903027]],
@@ -1492,15 +1492,6 @@
            ["~#datascript/Datom", [76620, "~:block/tags", 34619, 537001008]],
            ["~#datascript/Datom", [76620, "~:block/updated-at", 1794495345945, 537002341]],
            ["~#datascript/Datom", [76620, "~:block/uuid", "~u6a26c8e1-5db7-4a74-8180-915e63cb7cd3", 536989457]],
-           ["~#datascript/Datom", [76621, "~:block/content", "[诗梳风](https://shishufeng.com)", 536999206]],
-           ["~#datascript/Datom", [76621, "~:block/format", "~:markdown", 536989457]],
-           ["~#datascript/Datom", [76621, "~:block/journal?", false, 536989457]],
-           ["~#datascript/Datom", [76621, "~:block/left", 77748, 537000640]],
-           ["~#datascript/Datom", [76621, "~:block/page", 68891, 536989457]],
-           ["~#datascript/Datom", [76621, "~:block/parent", 68893, 536989457]],
-           ["~#datascript/Datom", [76621, "~:block/path-refs", 68891, 536999296]],
-           ["~#datascript/Datom", [76621, "~:block/properties", ["^ "], 537000640]],
-           ["~#datascript/Datom", [76621, "~:block/uuid", "~u6a26c8e1-ed2f-4026-9212-af989a243ab7", 536989457]],
            [
              "~#datascript/Datom",
              [
@@ -1762,11 +1753,11 @@
            ["~#datascript/Datom", [77731, "~:block/content", "[边角聊](https://leftovertalk.fm)", 536999216]],
            ["~#datascript/Datom", [77731, "~:block/format", "~:markdown", 536999202]],
            ["~#datascript/Datom", [77731, "~:block/journal?", false, 536999202]],
-           ["~#datascript/Datom", [77731, "~:block/left", 76621, 536999202]],
+           ["~#datascript/Datom", [77731, "~:block/left", 77748, 537002634]],
            ["~#datascript/Datom", [77731, "~:block/page", 68891, 536999202]],
            ["~#datascript/Datom", [77731, "~:block/parent", 68893, 536999202]],
            ["~#datascript/Datom", [77731, "~:block/path-refs", 68891, 536999296]],
-           ["~#datascript/Datom", [77731, "~:block/properties", ["^ "], 536999216]],
+           ["~#datascript/Datom", [77731, "~:block/properties", ["^ "], 537002634]],
            ["~#datascript/Datom", [77731, "~:block/uuid", "~u6ae229ef-8961-4844-a193-b520e0b08eaf", 536999202]],
            [
              "~#datascript/Datom",
@@ -2327,7 +2318,7 @@
                77839,
                "~:block/content",
                "{{query (page-property :type [[Podcast]])}}\nquery-sort-by:: page\nquery-sort-desc:: false\nquery-properties:: [:page :public :source :hosts :slogan :cover :status :tags]",
-               537002460
+               537003109
              ]
            ],
            ["~#datascript/Datom", [77839, "~:block/format", "~:markdown", 537000308]],
@@ -2351,7 +2342,7 @@
                  "~:query-properties",
                  "[:page :public :source :hosts :slogan :cover :status :tags]"
                ],
-               537002460
+               537003109
              ]
            ],
            [
@@ -2380,7 +2371,7 @@
                  "~:query-properties",
                  "[:page :public :source :hosts :slogan :cover :status :tags]"
                ],
-               537002460
+               537003109
              ]
            ],
            ["~#datascript/Datom", [77839, "~:block/uuid", "~u6aeeec0f-4e8b-4b4b-8c9f-cce954cad47a", 537000308]],
@@ -2877,7 +2868,10 @@
                  "~:source",
                  "https://shishufeng.com",
                  "~:hosts",
-                 "汉洋, 重轻",
+                 [
+                   "~#set",
+                   ["汉洋", "重轻"]
+                 ],
                  "~:slogan",
                  "",
                  "~:cover",
@@ -2887,7 +2881,7 @@
                  "~:tags",
                  ""
                ],
-               537002527
+               537002829
              ]
            ],
            [
@@ -2904,7 +2898,7 @@
                  "~:source",
                  "https://shishufeng.com",
                  "~:hosts",
-                 "汉洋, 重轻",
+                 "[[汉洋]], [[重轻]]",
                  "~:slogan",
                  "",
                  "~:cover",
@@ -2914,35 +2908,37 @@
                  "~:tags",
                  ""
                ],
-               537002527
+               537002829
              ]
            ],
-           ["~#datascript/Datom", [77974, "~:block/updated-at", 1794495831871, 537002549]],
+           ["~#datascript/Datom", [77974, "~:block/updated-at", 1794500486367, 537003173]],
            ["~#datascript/Datom", [77974, "~:block/uuid", "~u6af5cd1c-2f6b-4894-822c-d8a09a4d0052", 537002081]],
            [
              "~#datascript/Datom",
              [
                77977,
                "~:block/content",
-               "public:: true\ntype:: [[Podcast]]\nsource:: https://shishufeng.com\nhosts:: 汉洋, 重轻\nslogan::\ncover:: ![cover](https://cdn.shishufeng.com/website_logo_0c7e43c2de.svg){:height 120, :width 120}\nstatus:: Active\ntags::",
-               537002527
+               "public:: true\ntype:: [[Podcast]]\nsource:: https://shishufeng.com\nhosts:: [[汉洋]], [[重轻]]\nslogan::\ncover:: ![cover](https://cdn.shishufeng.com/website_logo_0c7e43c2de.svg){:height 120, :width 120}\nstatus:: Active\ntags::",
+               537002829
              ]
            ],
            ["~#datascript/Datom", [77977, "~:block/format", "~:markdown", 537002101]],
-           ["~#datascript/Datom", [77977, "~:block/invalid-properties", ["~#set", []], 537002527]],
+           ["~#datascript/Datom", [77977, "~:block/invalid-properties", ["~#set", []], 537002829]],
            ["~#datascript/Datom", [77977, "~:block/journal?", false, 537002101]],
            ["~#datascript/Datom", [77977, "~:block/left", 77974, 537002101]],
            ["~#datascript/Datom", [77977, "~:block/page", 77974, 537002101]],
            ["~#datascript/Datom", [77977, "~:block/parent", 77974, 537002101]],
-           ["~#datascript/Datom", [77977, "~:block/path-refs", 1583, 537002105]],
-           ["~#datascript/Datom", [77977, "~:block/path-refs", 33211, 537002105]],
-           ["~#datascript/Datom", [77977, "~:block/path-refs", 34109, 537002105]],
-           ["~#datascript/Datom", [77977, "~:block/path-refs", 34766, 537002105]],
-           ["~#datascript/Datom", [77977, "~:block/path-refs", 35529, 537002105]],
-           ["~#datascript/Datom", [77977, "~:block/path-refs", 49667, 537002105]],
-           ["~#datascript/Datom", [77977, "~:block/path-refs", 55135, 537002105]],
-           ["~#datascript/Datom", [77977, "~:block/path-refs", 77974, 537002105]],
-           ["~#datascript/Datom", [77977, "~:block/pre-block?", true, 537002527]],
+           ["~#datascript/Datom", [77977, "~:block/path-refs", 1583, 537002830]],
+           ["~#datascript/Datom", [77977, "~:block/path-refs", 33211, 537002830]],
+           ["~#datascript/Datom", [77977, "~:block/path-refs", 34109, 537002830]],
+           ["~#datascript/Datom", [77977, "~:block/path-refs", 34766, 537002830]],
+           ["~#datascript/Datom", [77977, "~:block/path-refs", 35529, 537002830]],
+           ["~#datascript/Datom", [77977, "~:block/path-refs", 49667, 537002830]],
+           ["~#datascript/Datom", [77977, "~:block/path-refs", 55135, 537002830]],
+           ["~#datascript/Datom", [77977, "~:block/path-refs", 77974, 537002830]],
+           ["~#datascript/Datom", [77977, "~:block/path-refs", 77998, 537002830]],
+           ["~#datascript/Datom", [77977, "~:block/path-refs", 78021, 537002830]],
+           ["~#datascript/Datom", [77977, "~:block/pre-block?", true, 537002829]],
            [
              "~#datascript/Datom",
              [
@@ -2960,7 +2956,10 @@
                  "~:source",
                  "https://shishufeng.com",
                  "~:hosts",
-                 "汉洋, 重轻",
+                 [
+                   "~#set",
+                   ["汉洋", "重轻"]
+                 ],
                  "~:slogan",
                  "",
                  "~:cover",
@@ -2970,7 +2969,7 @@
                  "~:tags",
                  ""
                ],
-               537002527
+               537002829
              ]
            ],
            [
@@ -2982,7 +2981,7 @@
                  "~#list",
                  ["~:public", "~:type", "~:source", "~:hosts", "~:slogan", "~:cover", "~:status", "~:tags"]
                ],
-               537002527
+               537002829
              ]
            ],
            [
@@ -2999,7 +2998,7 @@
                  "~:source",
                  "https://shishufeng.com",
                  "~:hosts",
-                 "汉洋, 重轻",
+                 "[[汉洋]], [[重轻]]",
                  "~:slogan",
                  "",
                  "~:cover",
@@ -3009,16 +3008,18 @@
                  "~:tags",
                  ""
                ],
-               537002527
+               537002829
              ]
            ],
-           ["~#datascript/Datom", [77977, "~:block/refs", 1583, 537002527]],
-           ["~#datascript/Datom", [77977, "~:block/refs", 33211, 537002527]],
-           ["~#datascript/Datom", [77977, "~:block/refs", 34109, 537002527]],
-           ["~#datascript/Datom", [77977, "~:block/refs", 34766, 537002527]],
-           ["~#datascript/Datom", [77977, "~:block/refs", 35529, 537002527]],
-           ["~#datascript/Datom", [77977, "~:block/refs", 49667, 537002527]],
-           ["~#datascript/Datom", [77977, "~:block/refs", 55135, 537002527]],
+           ["~#datascript/Datom", [77977, "~:block/refs", 1583, 537002829]],
+           ["~#datascript/Datom", [77977, "~:block/refs", 33211, 537002829]],
+           ["~#datascript/Datom", [77977, "~:block/refs", 34109, 537002829]],
+           ["~#datascript/Datom", [77977, "~:block/refs", 34766, 537002829]],
+           ["~#datascript/Datom", [77977, "~:block/refs", 35529, 537002829]],
+           ["~#datascript/Datom", [77977, "~:block/refs", 49667, 537002829]],
+           ["~#datascript/Datom", [77977, "~:block/refs", 55135, 537002829]],
+           ["~#datascript/Datom", [77977, "~:block/refs", 77998, 537002829]],
+           ["~#datascript/Datom", [77977, "~:block/refs", 78021, 537002829]],
            ["~#datascript/Datom", [77977, "~:block/uuid", "~u6af5cd29-5a12-46be-9b47-2dc2f046f07d", 537002101]],
            ["~#datascript/Datom", [77978, "~:block/content", "About", 537002104]],
            ["~#datascript/Datom", [77978, "~:block/format", "~:markdown", 537002104]],
@@ -3029,14 +3030,23 @@
            ["~#datascript/Datom", [77978, "~:block/uuid", "~u0c693e11-5846-4953-bd77-9de7169314f5", 537002104]],
            [
              "~#datascript/Datom",
-             [77979, "~:block/content", "诗梳风是一档关于创作过程的播客。我们谈论不限于具体媒介的，创作过程的各个层面。 诗梳风由汉洋和重轻主持，Geelish 制作，徐缓开发。", 537002113]
+             [
+               77979,
+               "~:block/content",
+               "诗梳风是一档关于创作过程的播客。我们谈论不限于具体媒介的，创作过程的各个层面。 诗梳风由[[汉洋]]和[[重轻]]主持，Geelish 制作，徐缓开发。",
+               537002878
+             ]
            ],
            ["~#datascript/Datom", [77979, "~:block/format", "~:markdown", 537002104]],
            ["~#datascript/Datom", [77979, "~:block/left", 77978, 537002104]],
            ["~#datascript/Datom", [77979, "~:block/page", 77974, 537002104]],
            ["~#datascript/Datom", [77979, "~:block/parent", 77978, 537002104]],
-           ["~#datascript/Datom", [77979, "~:block/path-refs", 77974, 537002105]],
-           ["~#datascript/Datom", [77979, "~:block/properties", ["^ "], 537002113]],
+           ["~#datascript/Datom", [77979, "~:block/path-refs", 77974, 537002879]],
+           ["~#datascript/Datom", [77979, "~:block/path-refs", 77998, 537002879]],
+           ["~#datascript/Datom", [77979, "~:block/path-refs", 78021, 537002879]],
+           ["~#datascript/Datom", [77979, "~:block/properties", ["^ "], 537002878]],
+           ["~#datascript/Datom", [77979, "~:block/refs", 77998, 537002878]],
+           ["~#datascript/Datom", [77979, "~:block/refs", 78021, 537002878]],
            ["~#datascript/Datom", [77979, "~:block/uuid", "~u26d12822-7896-4808-bdaf-32f7173fd3a8", 537002104]],
            ["~#datascript/Datom", [77980, "~:block/content", "Episodes", 537002104]],
            ["~#datascript/Datom", [77980, "~:block/format", "~:markdown", 537002104]],
@@ -3047,16 +3057,16 @@
            ["~#datascript/Datom", [77980, "~:block/uuid", "~u44ba8437-f9ba-46f9-8b6d-de1eb8dcbcfb", 537002104]],
            [
              "~#datascript/Datom",
-             [77981, "~:block/content", "E31  AI 在用：两个工业设计师的低科技与高门槛 · Case #[[2026-10-28 Wednesday]]", 537002549]
+             [77981, "~:block/content", "E31 AI 在用：两个工业设计师的低科技与高门槛 · Case #[[2026-10-28 Wednesday]]", 537002662]
            ],
            ["~#datascript/Datom", [77981, "~:block/format", "~:markdown", 537002104]],
-           ["~#datascript/Datom", [77981, "~:block/left", 77980, 537002104]],
+           ["~#datascript/Datom", [77981, "~:block/left", 77994, 537002639]],
            ["~#datascript/Datom", [77981, "~:block/page", 77974, 537002104]],
            ["~#datascript/Datom", [77981, "~:block/parent", 77980, 537002104]],
            ["~#datascript/Datom", [77981, "~:block/path-refs", 77718, 537002545]],
            ["~#datascript/Datom", [77981, "~:block/path-refs", 77974, 537002545]],
-           ["~#datascript/Datom", [77981, "~:block/properties", ["^ "], 537002549]],
-           ["~#datascript/Datom", [77981, "~:block/refs", 77718, 537002549]],
+           ["~#datascript/Datom", [77981, "~:block/properties", ["^ "], 537002662]],
+           ["~#datascript/Datom", [77981, "~:block/refs", 77718, 537002662]],
            ["~#datascript/Datom", [77981, "~:block/uuid", "~ub6cb7ba2-04d6-4618-b75b-c3041bd7ab5a", 537002104]],
            ["~#datascript/Datom", [77982, "~:block/content", "References", 537002104]],
            ["~#datascript/Datom", [77982, "~:block/format", "~:markdown", 537002104]],
@@ -3124,7 +3134,349 @@
            ["~#datascript/Datom", [77989, "~:block/properties", ["^ "], 537002375]],
            ["~#datascript/Datom", [77989, "~:block/refs", 77793, 537002375]],
            ["~#datascript/Datom", [77989, "~:block/uuid", "~u6af5d126-1292-4353-880a-b6fd1464c4de", 537002194]],
-           ["~#datascript/Datom", [77990, "~:schema/version", 2, 537002202]]
+           ["~#datascript/Datom", [77990, "~:schema/version", 2, 537002202]],
+           [
+             "~#datascript/Datom",
+             [77994, "~:block/content", "E27 AI 时代如何更好地找资料？feat. 六兽 #[[2026-08-13 Thursday]]", 537002658]
+           ],
+           ["~#datascript/Datom", [77994, "~:block/format", "~:markdown", 537002639]],
+           ["~#datascript/Datom", [77994, "~:block/left", 77995, 537002665]],
+           ["~#datascript/Datom", [77994, "~:block/page", 77974, 537002639]],
+           ["~#datascript/Datom", [77994, "~:block/parent", 77980, 537002639]],
+           ["~#datascript/Datom", [77994, "~:block/path-refs", 77210, 537002659]],
+           ["~#datascript/Datom", [77994, "~:block/path-refs", 77974, 537002659]],
+           ["~#datascript/Datom", [77994, "~:block/properties", ["^ "], 537002658]],
+           ["~#datascript/Datom", [77994, "~:block/refs", 77210, 537002658]],
+           ["~#datascript/Datom", [77994, "~:block/uuid", "~u6af5deca-4c6c-48ea-a415-cd693a72cfcf", 537002639]],
+           [
+             "~#datascript/Datom",
+             [77995, "~:block/content", "E24 我们应该如何对待和吸收他人作品？· Thoughts #[[2026-07-09 Thursday]]", 537003173]
+           ],
+           ["~#datascript/Datom", [77995, "~:block/format", "~:markdown", 537002665]],
+           ["~#datascript/Datom", [77995, "~:block/left", 77996, 537002691]],
+           ["~#datascript/Datom", [77995, "~:block/page", 77974, 537002665]],
+           ["~#datascript/Datom", [77995, "~:block/parent", 77980, 537002665]],
+           ["~#datascript/Datom", [77995, "~:block/path-refs", 76901, 537003174]],
+           ["~#datascript/Datom", [77995, "~:block/path-refs", 77974, 537003174]],
+           ["~#datascript/Datom", [77995, "~:block/properties", ["^ "], 537003173]],
+           ["~#datascript/Datom", [77995, "~:block/refs", 76901, 537003173]],
+           ["~#datascript/Datom", [77995, "~:block/uuid", "~u6af5deff-5aa1-4f5a-b9b7-130973131405", 537002665]],
+           [
+             "~#datascript/Datom",
+             [77996, "~:block/content", "E08 我们对可能性没有义务 · Thoughts #[[2026-03-12 Thursday]]", 537002711]
+           ],
+           ["~#datascript/Datom", [77996, "~:block/format", "~:markdown", 537002691]],
+           ["~#datascript/Datom", [77996, "~:block/left", 77997, 537002714]],
+           ["~#datascript/Datom", [77996, "~:block/page", 77974, 537002691]],
+           ["~#datascript/Datom", [77996, "~:block/parent", 77980, 537002691]],
+           ["~#datascript/Datom", [77996, "~:block/path-refs", 76109, 537002708]],
+           ["~#datascript/Datom", [77996, "~:block/path-refs", 77974, 537002708]],
+           ["~#datascript/Datom", [77996, "~:block/properties", ["^ "], 537002711]],
+           ["~#datascript/Datom", [77996, "~:block/refs", 76109, 537002711]],
+           ["~#datascript/Datom", [77996, "~:block/uuid", "~u6af5df32-c1e7-4f9a-8c35-3a1b118931d8", 537002691]],
+           ["~#datascript/Datom", [77997, "~:block/content", "E02 被形式决定的内容 · Thoughts #[[2026-01-30 Friday]]", 537002733]],
+           ["~#datascript/Datom", [77997, "~:block/format", "~:markdown", 537002714]],
+           ["~#datascript/Datom", [77997, "~:block/left", 77980, 537002714]],
+           ["~#datascript/Datom", [77997, "~:block/page", 77974, 537002714]],
+           ["~#datascript/Datom", [77997, "~:block/parent", 77980, 537002714]],
+           ["~#datascript/Datom", [77997, "~:block/path-refs", 75286, 537002734]],
+           ["~#datascript/Datom", [77997, "~:block/path-refs", 77974, 537002734]],
+           ["~#datascript/Datom", [77997, "~:block/properties", ["^ "], 537002733]],
+           ["~#datascript/Datom", [77997, "~:block/refs", 75286, 537002733]],
+           ["~#datascript/Datom", [77997, "~:block/uuid", "~u6af5df70-6357-48eb-b935-5e0701c358bf", 537002714]],
+           ["~#datascript/Datom", [78029, "~:block/created-at", 1794499362250, 537002873]],
+           ["~#datascript/Datom", [78029, "~:block/format", "~:markdown", 537002883]],
+           ["~#datascript/Datom", [78029, "~:block/journal?", false, 537002873]],
+           ["~#datascript/Datom", [78029, "~:block/name", "山有虎", 537002873]],
+           ["~#datascript/Datom", [78029, "~:block/original-name", "山有虎", 537002873]],
+           [
+             "~#datascript/Datom",
+             [
+               78029,
+               "~:block/properties",
+               [
+                 "^ ",
+                 "~:type",
+                 [
+                   "~#set",
+                   ["Podcast"]
+                 ],
+                 "~:source",
+                 "https://shanyouhu.xyz",
+                 "~:hosts",
+                 [
+                   "~#set",
+                   ["汉洋"]
+                 ],
+                 "~:slogan",
+                 "虎欲异群虎",
+                 "~:cover",
+                 "![cover](https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/9/98561f39-4fdd-442b-8ecb-3ae9c7f39edd/cover_small.jpg?v=4){:height 120, :width 120}",
+                 "~:status",
+                 "Active",
+                 "~:tags",
+                 "",
+                 "~:public",
+                 true
+               ],
+               537002960
+             ]
+           ],
+           [
+             "~#datascript/Datom",
+             [
+               78029,
+               "~:block/properties-text-values",
+               [
+                 "^ ",
+                 "~:type",
+                 "[[Podcast]]",
+                 "~:source",
+                 "https://shanyouhu.xyz",
+                 "~:hosts",
+                 "[[汉洋]]",
+                 "~:slogan",
+                 "虎欲异群虎",
+                 "~:cover",
+                 "![cover](https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/9/98561f39-4fdd-442b-8ecb-3ae9c7f39edd/cover_small.jpg?v=4){:height 120, :width 120}",
+                 "~:status",
+                 "Active",
+                 "~:tags",
+                 ""
+               ],
+               537002922
+             ]
+           ],
+           ["~#datascript/Datom", [78029, "~:block/updated-at", 1794499842471, 537003099]],
+           ["~#datascript/Datom", [78029, "~:block/uuid", "~u6af5e322-42bb-45d9-8e7e-71f9c8120c12", 537002873]],
+           [
+             "~#datascript/Datom",
+             [
+               78031,
+               "~:block/content",
+               "public:: true\ntype:: [[Podcast]]\nsource:: https://shanyouhu.xyz\nhosts:: [[汉洋]]\nslogan:: 虎欲异群虎\ncover:: ![cover](https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/9/98561f39-4fdd-442b-8ecb-3ae9c7f39edd/cover_small.jpg?v=4){:height 120, :width 120}\nstatus:: Active\ntags::",
+               537002960
+             ]
+           ],
+           ["~#datascript/Datom", [78031, "~:block/format", "~:markdown", 537002884]],
+           ["~#datascript/Datom", [78031, "~:block/invalid-properties", ["~#set", []], 537002922]],
+           ["~#datascript/Datom", [78031, "~:block/journal?", false, 537002884]],
+           ["~#datascript/Datom", [78031, "~:block/left", 78029, 537002884]],
+           ["~#datascript/Datom", [78031, "~:block/page", 78029, 537002884]],
+           ["~#datascript/Datom", [78031, "~:block/parent", 78029, 537002884]],
+           ["~#datascript/Datom", [78031, "~:block/path-refs", 1583, 537002916]],
+           ["~#datascript/Datom", [78031, "~:block/path-refs", 33211, 537002916]],
+           ["~#datascript/Datom", [78031, "~:block/path-refs", 34109, 537002916]],
+           ["~#datascript/Datom", [78031, "~:block/path-refs", 34766, 537002916]],
+           ["~#datascript/Datom", [78031, "~:block/path-refs", 35529, 537002916]],
+           ["~#datascript/Datom", [78031, "~:block/path-refs", 49667, 537002916]],
+           ["~#datascript/Datom", [78031, "~:block/path-refs", 55135, 537002916]],
+           ["~#datascript/Datom", [78031, "~:block/path-refs", 78021, 537002916]],
+           ["~#datascript/Datom", [78031, "~:block/path-refs", 78029, 537002916]],
+           ["~#datascript/Datom", [78031, "~:block/pre-block?", true, 537002922]],
+           [
+             "~#datascript/Datom",
+             [
+               78031,
+               "~:block/properties",
+               [
+                 "^ ",
+                 "~:type",
+                 [
+                   "~#set",
+                   ["Podcast"]
+                 ],
+                 "~:source",
+                 "https://shanyouhu.xyz",
+                 "~:hosts",
+                 [
+                   "~#set",
+                   ["汉洋"]
+                 ],
+                 "~:slogan",
+                 "虎欲异群虎",
+                 "~:cover",
+                 "![cover](https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/9/98561f39-4fdd-442b-8ecb-3ae9c7f39edd/cover_small.jpg?v=4){:height 120, :width 120}",
+                 "~:status",
+                 "Active",
+                 "~:tags",
+                 "",
+                 "~:public",
+                 true
+               ],
+               537002960
+             ]
+           ],
+           [
+             "~#datascript/Datom",
+             [
+               78031,
+               "~:block/properties-order",
+               [
+                 "~#list",
+                 ["~:type", "~:source", "~:hosts", "~:slogan", "~:cover", "~:status", "~:tags"]
+               ],
+               537002922
+             ]
+           ],
+           [
+             "~#datascript/Datom",
+             [
+               78031,
+               "~:block/properties-text-values",
+               [
+                 "^ ",
+                 "~:type",
+                 "[[Podcast]]",
+                 "~:source",
+                 "https://shanyouhu.xyz",
+                 "~:hosts",
+                 "[[汉洋]]",
+                 "~:slogan",
+                 "虎欲异群虎",
+                 "~:cover",
+                 "![cover](https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/9/98561f39-4fdd-442b-8ecb-3ae9c7f39edd/cover_small.jpg?v=4){:height 120, :width 120}",
+                 "~:status",
+                 "Active",
+                 "~:tags",
+                 ""
+               ],
+               537002922
+             ]
+           ],
+           ["~#datascript/Datom", [78031, "~:block/refs", 1583, 537002922]],
+           ["~#datascript/Datom", [78031, "~:block/refs", 33211, 537002922]],
+           ["~#datascript/Datom", [78031, "~:block/refs", 34109, 537002922]],
+           ["~#datascript/Datom", [78031, "~:block/refs", 34766, 537002922]],
+           ["~#datascript/Datom", [78031, "~:block/refs", 35529, 537002922]],
+           ["~#datascript/Datom", [78031, "~:block/refs", 49667, 537002922]],
+           ["~#datascript/Datom", [78031, "~:block/refs", 55135, 537002922]],
+           ["~#datascript/Datom", [78031, "~:block/refs", 78021, 537002922]],
+           ["~#datascript/Datom", [78031, "~:block/uuid", "~u6af5e333-30a8-44c7-b4a2-b3302c5172c4", 537002884]],
+           ["~#datascript/Datom", [78032, "~:block/content", "About", 537002887]],
+           ["~#datascript/Datom", [78032, "~:block/format", "~:markdown", 537002887]],
+           ["~#datascript/Datom", [78032, "~:block/left", 78031, 537002906]],
+           ["~#datascript/Datom", [78032, "~:block/page", 78029, 537002887]],
+           ["~#datascript/Datom", [78032, "~:block/parent", 78029, 537002887]],
+           ["~#datascript/Datom", [78032, "~:block/path-refs", 78029, 537002888]],
+           ["~#datascript/Datom", [78032, "~:block/uuid", "~ud21a6a0b-29e5-4e4d-90b1-c2fe3b6cfa5d", 537002887]],
+           ["~#datascript/Datom", [78033, "~:block/content", "困扰之事就在那里，如山中虎。", 537002901]],
+           ["~#datascript/Datom", [78033, "~:block/format", "~:markdown", 537002887]],
+           ["~#datascript/Datom", [78033, "~:block/left", 78032, 537002887]],
+           ["~#datascript/Datom", [78033, "~:block/page", 78029, 537002887]],
+           ["~#datascript/Datom", [78033, "~:block/parent", 78032, 537002887]],
+           ["~#datascript/Datom", [78033, "~:block/path-refs", 78029, 537002907]],
+           ["~#datascript/Datom", [78033, "~:block/properties", ["^ "], 537002901]],
+           ["~#datascript/Datom", [78033, "~:block/uuid", "~u14c8c41c-7613-4686-987c-7e6206ffc263", 537002887]],
+           ["~#datascript/Datom", [78034, "~:block/content", "Episodes", 537002887]],
+           ["~#datascript/Datom", [78034, "~:block/format", "~:markdown", 537002887]],
+           ["~#datascript/Datom", [78034, "~:block/left", 78032, 537002887]],
+           ["~#datascript/Datom", [78034, "~:block/page", 78029, 537002887]],
+           ["~#datascript/Datom", [78034, "~:block/parent", 78029, 537002887]],
+           ["~#datascript/Datom", [78034, "~:block/path-refs", 78029, 537002888]],
+           ["~#datascript/Datom", [78034, "~:block/uuid", "~ua95eebc5-bb01-4962-902d-d2f3cddd6430", 537002887]],
+           ["~#datascript/Datom", [78035, "~:block/content", "E39 唐朝的睡眠与失眠 #[[2026-11-11 Wednesday]]", 537002952]],
+           ["~#datascript/Datom", [78035, "~:block/format", "~:markdown", 537002887]],
+           ["~#datascript/Datom", [78035, "~:block/left", 78041, 537002956]],
+           ["~#datascript/Datom", [78035, "~:block/page", 78029, 537002887]],
+           ["~#datascript/Datom", [78035, "~:block/parent", 78034, 537002887]],
+           ["~#datascript/Datom", [78035, "~:block/path-refs", 77957, 537002953]],
+           ["~#datascript/Datom", [78035, "~:block/path-refs", 78029, 537002953]],
+           ["~#datascript/Datom", [78035, "~:block/properties", ["^ "], 537002952]],
+           ["~#datascript/Datom", [78035, "~:block/refs", 77957, 537002952]],
+           ["~#datascript/Datom", [78035, "~:block/uuid", "~ub28b8629-9d2f-4c03-a445-d01d15d61f4d", 537002887]],
+           ["~#datascript/Datom", [78036, "~:block/content", "References", 537002887]],
+           ["~#datascript/Datom", [78036, "~:block/format", "~:markdown", 537002887]],
+           ["~#datascript/Datom", [78036, "~:block/left", 78034, 537002887]],
+           ["~#datascript/Datom", [78036, "~:block/page", 78029, 537002887]],
+           ["~#datascript/Datom", [78036, "~:block/parent", 78029, 537002887]],
+           ["~#datascript/Datom", [78036, "~:block/path-refs", 78029, 537002888]],
+           ["~#datascript/Datom", [78036, "~:block/uuid", "~uefffa30d-0ec1-4bd2-a549-e3527e2d1069", 537002887]],
+           ["~#datascript/Datom", [78038, "~:block/content", "但无论如何，我们还要过去。", 537002901]],
+           ["~#datascript/Datom", [78038, "~:block/format", "~:markdown", 537002901]],
+           ["~#datascript/Datom", [78038, "~:block/left", 78033, 537002901]],
+           ["~#datascript/Datom", [78038, "~:block/page", 78029, 537002901]],
+           ["~#datascript/Datom", [78038, "~:block/parent", 78032, 537002901]],
+           ["~#datascript/Datom", [78038, "~:block/path-refs", 78029, 537002907]],
+           ["~#datascript/Datom", [78038, "~:block/properties", ["^ "], 537002901]],
+           ["~#datascript/Datom", [78038, "~:block/uuid", "~u6af5e350-37ea-4710-a5e5-b484c01c1ad6", 537002901]],
+           ["~#datascript/Datom", [78040, "~:block/content", "", 537002936]],
+           ["~#datascript/Datom", [78040, "~:block/format", "~:markdown", 537002936]],
+           ["~#datascript/Datom", [78040, "~:block/left", 78035, 537002936]],
+           ["~#datascript/Datom", [78040, "~:block/page", 78029, 537002936]],
+           ["~#datascript/Datom", [78040, "~:block/parent", 78034, 537002936]],
+           ["~#datascript/Datom", [78040, "~:block/path-refs", 78029, 537002937]],
+           ["~#datascript/Datom", [78040, "~:block/properties", ["^ "], 537002936]],
+           ["~#datascript/Datom", [78040, "~:block/uuid", "~u6af5e3c5-396f-4c31-9cd7-8b04b2bd79c9", 537002936]],
+           ["~#datascript/Datom", [78041, "~:block/content", "E28 建筑是语言 #[[2026-04-30 Thursday]]", 537002982]],
+           ["~#datascript/Datom", [78041, "~:block/format", "~:markdown", 537002956]],
+           ["~#datascript/Datom", [78041, "~:block/left", 78045, 537003038]],
+           ["~#datascript/Datom", [78041, "~:block/page", 78029, 537002956]],
+           ["~#datascript/Datom", [78041, "~:block/parent", 78034, 537002956]],
+           ["~#datascript/Datom", [78041, "~:block/path-refs", 76407, 537002983]],
+           ["~#datascript/Datom", [78041, "~:block/path-refs", 78029, 537002983]],
+           ["~#datascript/Datom", [78041, "~:block/properties", ["^ "], 537002982]],
+           ["~#datascript/Datom", [78041, "~:block/refs", 76407, 537002982]],
+           ["~#datascript/Datom", [78041, "~:block/uuid", "~u6af5e3d5-6a44-4274-bce5-d9396f5f4803", 537002956]],
+           [
+             "~#datascript/Datom",
+             [78042, "~:block/content", "E16 出山与入山：僧兵、殖民、军人、游客——韩国山寺与五百年来民族心灵史【总集】 #[[2025-11-13 Thursday]]", 537003007]
+           ],
+           ["~#datascript/Datom", [78042, "~:block/format", "~:markdown", 537002969]],
+           ["~#datascript/Datom", [78042, "~:block/left", 78046, 537003080]],
+           ["~#datascript/Datom", [78042, "~:block/page", 78029, 537002969]],
+           ["~#datascript/Datom", [78042, "~:block/parent", 78034, 537002969]],
+           ["~#datascript/Datom", [78042, "~:block/path-refs", 74174, 537003008]],
+           ["~#datascript/Datom", [78042, "~:block/path-refs", 78029, 537003008]],
+           ["~#datascript/Datom", [78042, "~:block/properties", ["^ "], 537003007]],
+           ["~#datascript/Datom", [78042, "~:block/refs", 74174, 537003007]],
+           ["~#datascript/Datom", [78042, "~:block/uuid", "~u6af5e3f2-3766-41c5-9fe1-d68b932161b7", 537002969]],
+           ["~#datascript/Datom", [78043, "~:block/content", "E06 浮寄流寓：唐朝的旅馆（四小时完整版） #[[2025-03-17 Monday]]", 537003076]],
+           ["~#datascript/Datom", [78043, "~:block/format", "~:markdown", 537003009]],
+           ["~#datascript/Datom", [78043, "~:block/left", 78034, 537003009]],
+           ["~#datascript/Datom", [78043, "~:block/page", 78029, 537003009]],
+           ["~#datascript/Datom", [78043, "~:block/parent", 78034, 537003009]],
+           ["~#datascript/Datom", [78043, "~:block/path-refs", 71043, 537003077]],
+           ["~#datascript/Datom", [78043, "~:block/path-refs", 78029, 537003077]],
+           ["~#datascript/Datom", [78043, "~:block/properties", ["^ "], 537003076]],
+           ["~#datascript/Datom", [78043, "~:block/refs", 71043, 537003076]],
+           ["~#datascript/Datom", [78043, "~:block/uuid", "~u6af5e46a-9343-46f3-b540-51e0e469bd46", 537003009]],
+           ["~#datascript/Datom", [78044, "~:block/content", "E17 中世纪的爱与欲 #[[2025-12-11 Thursday]]", 537003034]],
+           ["~#datascript/Datom", [78044, "~:block/format", "~:markdown", 537003015]],
+           ["~#datascript/Datom", [78044, "~:block/left", 78042, 537003015]],
+           ["~#datascript/Datom", [78044, "~:block/page", 78029, 537003015]],
+           ["~#datascript/Datom", [78044, "~:block/parent", 78034, 537003015]],
+           ["~#datascript/Datom", [78044, "~:block/path-refs", 74519, 537003035]],
+           ["~#datascript/Datom", [78044, "~:block/path-refs", 78029, 537003035]],
+           ["~#datascript/Datom", [78044, "~:block/properties", ["^ "], 537003034]],
+           ["~#datascript/Datom", [78044, "~:block/refs", 74519, 537003034]],
+           ["~#datascript/Datom", [78044, "~:block/uuid", "~u6af5e47c-1e4e-4023-8e8a-71927d15c6c0", 537003015]],
+           [
+             "~#datascript/Datom",
+             [78045, "~:block/content", "E20 博物馆的水有多深：文物从哪来？文物向哪去？盖蒂风云【总集】 #[[2026-01-08 Thursday]]", 537003058]
+           ],
+           ["~#datascript/Datom", [78045, "~:block/format", "~:markdown", 537003038]],
+           ["~#datascript/Datom", [78045, "~:block/left", 78044, 537003038]],
+           ["~#datascript/Datom", [78045, "~:block/page", 78029, 537003038]],
+           ["~#datascript/Datom", [78045, "~:block/parent", 78034, 537003038]],
+           ["~#datascript/Datom", [78045, "~:block/path-refs", 75070, 537003052]],
+           ["~#datascript/Datom", [78045, "~:block/path-refs", 78029, 537003052]],
+           ["~#datascript/Datom", [78045, "~:block/properties", ["^ "], 537003058]],
+           ["~#datascript/Datom", [78045, "~:block/refs", 75070, 537003058]],
+           ["~#datascript/Datom", [78045, "~:block/uuid", "~u6af5e4a7-0b3f-4425-8c56-6c8402938e40", 537003038]],
+           [
+             "~#datascript/Datom",
+             [78046, "~:block/content", "E07 在创作中把你困住的是什么？重轻与汉洋仔细掰扯创作 #[[2025-04-07 Monday]]", 537003099]
+           ],
+           ["~#datascript/Datom", [78046, "~:block/format", "~:markdown", 537003080]],
+           ["~#datascript/Datom", [78046, "~:block/left", 78043, 537003080]],
+           ["~#datascript/Datom", [78046, "~:block/page", 78029, 537003080]],
+           ["~#datascript/Datom", [78046, "~:block/parent", 78034, 537003080]],
+           ["~#datascript/Datom", [78046, "~:block/path-refs", 71210, 537003100]],
+           ["~#datascript/Datom", [78046, "~:block/path-refs", 78029, 537003100]],
+           ["~#datascript/Datom", [78046, "~:block/properties", ["^ "], 537003099]],
+           ["~#datascript/Datom", [78046, "~:block/refs", 71210, 537003099]],
+           ["~#datascript/Datom", [78046, "~:block/uuid", "~u6af5e4f2-8a61-48f7-99c8-21cdc9805964", 537003080]]
          ]
        ]
      ]
@@ -3155,7 +3507,7 @@
  <script>
    window.logseq_state = document.getElementById("logseq-state-data").textContent;
  </script>
- <script id="wiki-page-reference-filter" data-pages="[&quot;how to update copyright of projects in goland&quot;,&quot;my recommendation&quot;,&quot;my subscription&quot;,&quot;my wishlist&quot;,&quot;serendipedia | \u7ef4\u673a\u6e38\u8d70&quot;,&quot;what i use&quot;,&quot;wiki index&quot;,&quot;\u4e0d\u53ef\u7406\u8bba&quot;,&quot;\u8bd7\u68b3\u98ce&quot;,&quot;\u9ec4\u6cb9\u5564\u9152\u5427 | butterbeer bar&quot;]">
+ <script id="wiki-page-reference-filter" data-pages="[&quot;how to update copyright of projects in goland&quot;,&quot;my recommendation&quot;,&quot;my subscription&quot;,&quot;my wishlist&quot;,&quot;serendipedia | \u7ef4\u673a\u6e38\u8d70&quot;,&quot;what i use&quot;,&quot;wiki index&quot;,&quot;\u4e0d\u53ef\u7406\u8bba&quot;,&quot;\u5c71\u6709\u864e&quot;,&quot;\u8bd7\u68b3\u98ce&quot;,&quot;\u9ec4\u6cb9\u5564\u9152\u5427 | butterbeer bar&quot;]">
    (() => {
      const root = document.getElementById("root");
      if (!root) return;
